@@ -127,6 +127,11 @@ article h2{
   margin-bottom: 10px;
 }
 
+#skills-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
 
 .item{
   display: grid;
@@ -162,6 +167,12 @@ article h2{
   height: 100%;
   background-color: var(--destaque-inverso);
   border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  #skills-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .item-formacao{
