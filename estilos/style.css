@@ -127,37 +127,53 @@ article h2{
   margin-bottom: 10px;
 }
 
-#skills-container{
+
+.item{
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
+  margin-top: 40px;
 }
 
-#skills-container .info{
+.info{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#skills-container .nome{
+.nome{
   font-weight: bold;
   color: var(--texto);
 }
 
-#skills-container .porcent{
+.porcent{
   font-weight: bold;
   color: var(--destaque);
 }
 
-#skills-container .barra{
+.barra{
   width: 100%;
   height: 10px;
   background-color: var(--fundo-principal);
   border-radius: 5px;
 }
 
-#skills-container .progresso{
+.progresso{
   height: 100%;
   background-color: var(--destaque-inverso);
   border-radius: 5px;
+}
+
+.item-formacao{
+  margin-bottom: 20px;
+  background-color: rgba(211, 211, 211, 0.265);
+  padding: 8px;
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  transition: border-left-width 0.5s;
+}
+
+.item-formacao:hover{
+  border-left: 15px solid var(--destaque);
+  cursor: pointer;
 }
