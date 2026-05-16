@@ -84,6 +84,16 @@ img.foto{
   display: block;
   margin: auto;
   margin-bottom: 15px;
+  transition: width 0.8s;
+}
+
+img.foto:hover{
+  border-color: var(--destaque-inverso);
+  outline-color: var(--destaque-inverso);
+  transition: border-color 0.5s, outline-color 0.5s;
+  cursor: pointer;
+  width: 220px;
+  transition: width 0.8s;
 }
 
 section#ficha h1{
